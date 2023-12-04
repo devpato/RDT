@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte Diario Tulum</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="branding">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="" srcset="">
+        </div>
+        <div class="icons">
+          <img src="./assets/ig-icon.png" alt="" class="insta">
+          <img src="./assets/whataspp-icon.png" alt="" class="wsp">
+        </div>
+      </div>
+      <div class="menu-option">
+        <a href="index.html">HOME</a>
+      </div>
+      <div class="menu-option">
+        <a href="comunidad.html">COMUNIDAD</a>
+      </div>
+      <div class="menu-option">
+        <a href="mapa.html">MAPA</a>
+      </div>
+      <div class="menu-option">
+        <a href="servicios.html">SERVICIOS</a>
+      </div>
+      <div class="menu-option">
+        <a href="nosotros.html">NOSOTROS</a>
+      </div>
+      <div class="menu-option">
+        <a href="contacto.html">CONTACTO</a>
+      </div>
+      <div class="menu-icon menu-btn" onclick="toggleMenu()">
+        <img src="./assets/menu-icon.png" alt="" srcset="">
+      </div>
+    </nav>
+    <div class="container">
+      <div class="column col-1">
+        <div class="title">SERVICIOS</div>
+      </div>
+      <div class="column col-2">
+        <div class="title">CONOCENOS</div>
+      </div>
+      <div class="column col-3">
+        <div class="title">MAPA DE TULUM</div>
+      </div>
+      <div class="column col-4">
+        <div class="title">COMUNIDAD</div>
+      </div>
+      <div class="titles">
+        <span class="title">creativa</span>
+        <span class="subtitle">MULTIDISCIPLINAR</span>
+      </div>
+    </div>
+    <div id="menu" onclick="toggleMenu()">
+      <a href="index.html">Home</a>
+      <a href="comunidad.html">Community</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <script>
+      function toggleMenu() {
+        console.log('hey')
+        document.getElementById('menu').classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>

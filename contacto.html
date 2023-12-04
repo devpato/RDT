@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte Diario Tulum</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="branding">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="" srcset="" />
+        </div>
+        <div class="icons">
+          <img src="./assets/ig-icon.png" alt="" class="insta" />
+          <img src="./assets/whataspp-icon.png" alt="" class="wsp" />
+        </div>
+      </div>
+      <div class="menu-option">
+        <a href="index.html">HOME</a>
+      </div>
+      <div class="menu-option">
+        <a href="comunidad.html">COMUNIDAD</a>
+      </div>
+      <div class="menu-option">
+        <a href="mapa.html">MAPA</a>
+      </div>
+      <div class="menu-option">
+        <a href="servicios.html">SERVICIOS</a>
+      </div>
+      <div class="menu-option">
+        <a href="nosotros.html">NOSOTROS</a>
+      </div>
+      <div class="menu-option">
+        <a href="contacto.html">CONTACTO</a>
+      </div>
+      <div class="menu-icon menu-btn" onclick="toggleMenu()">
+        <img src="./assets/menu-icon.png" alt="" srcset="">
+      </div>
+    </nav>
+    <div class="container">
+        <section class="section-3">
+            <div class="row--top">
+                <div class="col-left">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-right">
+                    <span class="downey">CONTACTANOS</span>
+                </div>
+            </div>
+            <div class="row--bottom">
+                <div class="col-left">
+                    <img src="./assets/contacto.jpg" alt="">
+                </div>
+                <div class="col-right">
+                    <div class="row">
+                        <div class="box"></div>
+                    </div>
+                    <div class="row">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </div>
+    <div id="menu" onclick="toggleMenu()">
+        <a href="index.html">Home</a>
+        <a href="comunidad.html">Community</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById('menu').classList.toggle('show');
+        }
+      </script>
+  </body>
+</html>

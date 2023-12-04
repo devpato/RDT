@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    background-color: #FAF4E4;
+    font-family: "NeuePlak";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main */
+
+.carousel {
+    margin: 16px 0;
+    width: 100%;
+    background-color: #dfd7c0;
+    font-size: 20px;
+    font-family: "Downey";
+    border-top: 2px solid #2C2C2C;
+    border-bottom: 2px solid #2C2C2C;
+    overflow: hidden;
+}
+
+.carousel .content {
+    display: flex; /* Use flexbox to align paragraphs horizontally */
+    animation: marquee 30s linear infinite;
+}
+
+.carousel p {
+    flex-shrink: 0; /* Prevent paragraphs from shrinking */
+    margin-right: 40px; /* Adjust the margin based on your design */
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(1%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+ 
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-height: 100vh;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-banner {
+    width: calc(100% - 200px);
+    height: 700px;
+}
+
+.logo {
+    margin: 40px;
+    width: 200px;
+}
+
+/*   servicios   */
+.servicios {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.services-img-left {
+    position: absolute;
+    left: 40px;
+    height: 900px;
+    width: 800px;
+}
+
+.top {
+    height: 40%;
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.bottom {
+    height: 60%;
+}
+
+.downey {
+    font-size: 60px;
+    font-family: "Downey";
+}
+
+.qanoar {
+    font-size: 50px;
+    font-family: "Qanoar";
+    line-height: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.rows {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    width: 620px;
+}
+
+.row p {
+    width: 600px;
+}
+
+button {
+    margin-top: 80px;
+    min-width: 360px;
+    padding: 8px;
+    background:none;
+    border-radius: 0;
+    border: 1px solid #2C2C2C;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #FAF4E4;
+    background: #000;
+    cursor: pointer;
+}
+/* Section 1 */
+
+.section-1 .col-left {
+    width: 50%;
+    background-image: url('./assets/mapa1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.section-1 .col-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+}
+
+.section-1 .title {
+    width: 100%;
+    height: calc(60vh - 20px);
+    font-size: 40px;
+    font-family: "Downey";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-1 .title span {
+
+    font-size: 30px;
+    font-family: "Qanoar";
+}
+
+.footer {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer img {
+    height: 200px;
+}
+
+/* Section 2 */
+
+.section-2 {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.section-2_header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+}
+
+.section-2_row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.service {
+    max-width: 300px;
+    text-align: justify;
+    margin: 16px 40px;
+}
+
+.service_inner-box {
+    border: 2px solid #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service_inner-box img {
+    width: 100%;
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.service_inner-box-h3 {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+    Section 3
+*/
+.section-3 {
+    display: flex;
+    flex-direction: column;
+}
+.section-3 .header {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Downey";
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #2C2C2C;
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.cols {
+    display: flex;
+}
+
+.cols .col {
+    width: 33%;
+    border-left: 2px solid #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px
+}
+
+.col img {
+    height: 500px;
+    width: 100%;
+}
+
+.col .title {
+    width: 100%;
+    font-size: 38px;
+    font-family: "Downey";
+    margin: 24px 0;
+    text-align: center;
+    height: 80px;
+}
+
+/* 
+    Section 4
+*/
+.section-4 {
+    display: flex;
+    flex-direction: column;
+}
+.section-4 .header {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Qanoar";
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #2C2C2C;
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.cols {
+    display: flex;
+}
+
+.cols .col {
+    width: 33%;
+    border-left: 2px solid #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px
+}
+
+.col img {
+    height: 500px;
+    width: 100%;
+}
+
+.col .title {
+    width: 100%;
+    font-size: 38px;
+    font-family: "Downey";
+    margin: 24px 0;
+    text-align: center;
+}
+
+/* 
+    Section 5
+*/
+.section-5 {
+    display: flex;
+    flex-direction: column;
+}
+.section-5 .header {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Qanoar";
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #2C2C2C;
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.section-5 {
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.cols {
+    display: flex;
+}
+
+.cols .col {
+    width: 33%;
+    border-left: 2px solid #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px
+}
+
+.col img {
+    height: 500px;
+    width: 100%;
+}
+
+.col .title {
+    width: 100%;
+    font-size: 38px;
+    font-family: "Downey";
+    margin: 24px 0;
+    text-align: center;
+}
+
+.col p {
+    width: 100%;
+    text-align: justify;
+    font-family: "NeuePlak";
+    margin: 0;
+    height: 100px;
+}
+
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.quote {
+    width: 1000px;
+    text-align: center;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.quote, .nivel {
+    font-family: "Qanoar";
+    font-size: 32px;
+}
+
+.rows.tops {
+    border-bottom: 2px solid #2C2C2C;
+}
+
+/*
+    Section 7
+*/
+
+.section-7 {
+    min-height: 80vh;
+}
+
+.col-left-a, .col-right-a {
+    width: 50%;
+    padding: 0 80px;
+}
+
+.col-right-a button {
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.section-7_row  {
+    display: flex;
+    position: relative;
+}
+
+.section-7_row:first-child {
+    display: flex;
+    min-height: 60vh;
+    justify-content: center;
+}
+
+.section-7_row:nth-child(3) {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    border-top: 2px solid #2C2C2C;
+    position: relative;
+}
+
+.section-7_row img {
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+    top: -36px;
+}
+
+.section-7_row .data {
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #2C2C2C;
+}
+
+.data div:first-child {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: rgb(223, 215, 192);
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.data div:nth-child(2) {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+

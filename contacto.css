@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: #FAF4E4;
+    font-family: "NeuePlak";
+}
+
+.downey {
+    margin-top: 16px;
+    font-size: 48px;
+    font-family: "Downey";
+}
+
+section {
+    display: flex;
+}
+
+.downey {
+    margin-top: 16px;
+    font-size: 48px;
+    font-family: "Downey";
+}
+
+/*
+
+Section 3
+
+*/
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row--top {
+    min-height: 20vh;
+    border-bottom: 2px solid #2c2c2c;
+    display: flex;
+}
+
+.row--bottom {
+    min-height: 50vh;
+    display: flex;
+}
+
+.row--bottom .col-right, .row--bottom .col-left,  .row--top .col-right, .row--top .col-left{
+    width: 50%;
+    padding: 32px;
+    position: relative;
+}
+
+.row--top .col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row--bottom p, .row--top p {
+    margin: 16px;
+}
+
+.row--bottom .col-left img {
+    position: absolute;
+    height: 900px;
+    width: 800px;
+    top: -160px;
+}
+
+.box {
+    width: 300px;
+}
+
+.box p {
+    text-align: right;
+}
+
+
+
+
+
+
