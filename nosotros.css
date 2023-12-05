@@ -48,8 +48,8 @@ section {
 
 .banner-img {
     position: absolute;
-    left: 100px;
-    top: 20px;
+    left: 40px;
+    top: -72px;
     z-index: 1;
 }
 
