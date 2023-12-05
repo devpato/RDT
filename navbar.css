@@ -106,6 +106,7 @@ a {
 @media screen and (max-width: 768px) {
     .branding {
         width: 100%;
+        border-bottom: 2px solid #2C2C2C;
     }
 
     .icons,
