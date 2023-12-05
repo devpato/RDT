@@ -1,3 +1,4 @@
+/* Navbar Styles */
 nav {
     height: 60px;
     border-style: solid;
@@ -25,6 +26,7 @@ nav {
     width: 20px;
     margin: 0 8px;
 }
+
 .menu-option {
     font-family: "NeuePlakBold";
     cursor: pointer;
@@ -58,12 +60,7 @@ a {
     all: unset;
 }
 
-/*
-
-MENU
-
-*/
-
+/* Menu Styles */
 #menu {
     cursor: pointer;
     position: fixed;
@@ -81,16 +78,45 @@ MENU
     transition: transform 0.5s ease-in-out;
     z-index: 1;
     font-family: "NeuePlakBold";
-  }
+}
 
-  #menu a {
+#menu a {
     color: #FAF4E4;
     text-decoration: none;
     font-size: 24px;
     margin: 20px;
     transition: color 0.3s ease-in-out;
-  }
+}
 
-  #menu.show {
+#menu.show {
     transform: scale(1);
-  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .menu-option {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .branding {
+        width: 100%;
+    }
+
+    .icons,
+    .menu-option{
+        display: none;
+    }
+
+    .menu-icon  {
+        display: flex;
+        width: 100%;
+        border-left: none;
+        border-bottom: 2px solid #2C2C2C;
+    }
+}
