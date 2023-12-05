@@ -61,7 +61,7 @@ body {
 
 .img-banner {
     width: calc(100% - 200px);
-    height: 700px;
+    /* height: 700px; */
 }
 
 .logo {
@@ -81,8 +81,8 @@ body {
 .services-img-left {
     position: absolute;
     left: 40px;
-    height: 900px;
-    width: 800px;
+    /* height: 900px; */
+    height: 700px;
 }
 
 .top {
@@ -197,8 +197,8 @@ button:hover {
 /* Section 2 */
 
 .section-2 {
-    min-height: 100vh;
-    max-height: 100vh;
+    /* min-height: 100vh;
+    max-height: 100vh; */
     width: 100%;
 }
 
@@ -296,7 +296,7 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
-.section-4 .header {
+.header {
     width: 100%;
     font-size: 24px;
     text-align: center;
@@ -311,16 +311,6 @@ button:hover {
 
 .cols {
     display: flex;
-}
-
-.cols .col {
-    width: 33%;
-    border-left: 2px solid #2C2C2C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px
 }
 
 .col img {
@@ -343,18 +333,6 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
-.section-5 .header {
-    width: 100%;
-    font-size: 24px;
-    text-align: center;
-    font-family: "Qanoar";
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid #2C2C2C;
-    border-bottom: 2px solid #2C2C2C;
-}
 
 .section-5 {
     border-bottom: 2px solid #2C2C2C;
@@ -362,16 +340,6 @@ button:hover {
 
 .cols {
     display: flex;
-}
-
-.cols .col {
-    width: 33%;
-    border-left: 2px solid #2C2C2C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px
 }
 
 .col img {
@@ -463,6 +431,7 @@ button:hover {
     left: 40px;
     z-index: 1;
     top: -36px;
+    height: 300px;
 }
 
 .section-7_row .data {
@@ -495,4 +464,95 @@ button:hover {
     padding: 16px;
 }
 
+@media only screen and (max-width: 767px) {
+    .carousel, .services-img-left, .section-6, .section-7  {
+        display: none;
+    }
 
+    .img-banner {
+        height: 200px;
+        width: 100%;
+        margin: 32px 0;
+    }
+
+    .section-2_row {
+        flex-direction: column;
+    }
+
+    .inner-box {
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 200px; */
+        /* width: 620px; */
+        /* font-size: 12px; */
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .downey {
+        font-size: 24px;
+    }
+
+    .qanoar {
+        font-size: 24px;
+    }
+
+    .row p {
+        width: 100%;
+    }
+
+    .servicios {
+        height: 50%;
+    }
+    .top, .bottom {
+        height: 10%;
+        max-height: 60%;
+    }
+
+    button {
+        margin: 24px;
+        min-width: 0;
+    }
+
+    .cols {
+        flex-direction: column;
+    }
+
+    .cols .col {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .col p {
+        width: 80%;
+        margin: 8px;
+    }
+
+    .cols .col {
+        border-left: 0;
+        height: 100vh;
+    }
+
+    .col .title {
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+    }
+
+    .col img {
+        max-height: 500px;
+        width: 100%;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+
+    .branding {
+        width: 50%;
+    }
+}
