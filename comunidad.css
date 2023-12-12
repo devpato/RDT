@@ -95,7 +95,27 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .container, .row {
         padding: 16px;
+        height: 100%;
     }
+    .row {
+        margin: 0;
+        text-align: center;
+    }
+
+    .row img {
+        display: none;
+    }
+
+    .inner-box {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    button {
+        margin-top: 16px;
+    }
+
 }
