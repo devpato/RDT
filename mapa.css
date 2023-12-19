@@ -23,6 +23,19 @@ section {
     width: 100%;
 }
 
+a.button {
+    width: 280px;
+    margin-top: 32px;
+    padding: 8px;
+    background:none;
+    border-radius: 0;
+    border: 1px solid #2C2C2C;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
 .section-1 .col-right {
     width: 50%;
     display: flex;
@@ -41,6 +54,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .section-1 .title span {
 
