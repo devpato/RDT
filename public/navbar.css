@@ -20,11 +20,18 @@ nav {
 .branding .icons {
     cursor: pointer;
     display: flex;
+    align-items: center;
 }
 
 .icons img {
     width: 20px;
+    height: 20px;
     margin: 0 8px;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
 }
 
 .menu-option {
@@ -75,7 +82,7 @@ a {
     justify-content: center;
     transform-origin: top right;
     transform: scale(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     z-index: 1;
     font-family: "NeuePlakBold";
 }

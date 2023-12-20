@@ -362,6 +362,10 @@ button:hover {
     height: 100vh;
 }
 
+.quote-container {
+    display: none;
+}
+
 .quote {
     width: 1000px;
     text-align: center;
@@ -369,6 +373,7 @@ button:hover {
 
 .name {
     font-size: 40px;
+    text-align: center;
 }
 
 .quote, .nivel {

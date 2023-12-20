@@ -15,8 +15,12 @@
           <img src="./assets/logo.png" alt="" srcset="" />
         </div>
         <div class="icons">
-          <img src="./assets/ig-icon.png" alt="" class="insta" />
-          <img src="./assets/whataspp-icon.png" alt="" class="wsp" />
+          <a href="https://www.instagram.com/reportediariotulum/">
+            <img src="./assets/ig-icon.png" alt="" class="insta" />
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=529842358096&text&type=phone_number&app_absent=0">
+            <img src="./assets/whataspp-icon.png" alt="" class="wsp" />
+          </a>
         </div>
       </div>
       <div class="menu-option">
@@ -142,7 +146,7 @@
             </p>
           </div>
           <div class="col col-2">
-            <img src="./assets/servicios2.png" alt="" />
+            <img src="./assets/servicios1.jpg" alt="" />
             <div class="title">SOCIAL MEDIA</div>
             <p>
               Algunas de las marcas con las que trabajamos. Diseño de Feed,
@@ -250,8 +254,14 @@
       </div>
       <section class="section-6">
         <div class="rows tops">
+          <div class="quote-container">
             <p class="quote">Su trabajo es de muy buena calidad. Feliz de trabajar con su equipo!</p>
             <p class="name">Mauricio</p>
+          </div>
+          <div class="quote-container">
+            <p class="quote">asdfadfdad.adfs dasdfadf</p>
+            <p class="name">Test</p>
+        </div>
         </div>
         <div class="rows">
             <p class="nivel">Estás listo para pasar al siguiente nivel?</p>
@@ -268,9 +278,29 @@
       <a href="contacto.html">Contacto</a>
     </div>
     <script>
+
       function toggleMenu() {
         document.getElementById('menu').classList.toggle('show');
       }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        let currentIndex = 0;
+          const quoteContainers = document.querySelectorAll('.quote-container');
+
+          function showNextQuote() {
+              quoteContainers.forEach(container => {
+                  container.style.display = 'none';
+              });
+
+              currentIndex = (currentIndex + 1) % quoteContainers.length;
+              quoteContainers[currentIndex].style.display = 'block';
+          }
+
+          // Show the first quote container initially
+          quoteContainers[currentIndex].style.display = 'block';
+
+          setInterval(showNextQuote, 5000);
+        });
     </script>
   </body>
 </html>
