@@ -363,21 +363,26 @@ button:hover {
 
 .quote-container {
     display: none;
-}
-
-.quote {
-    width: 1000px;
-    text-align: center;
-}
-
-.name {
-    font-size: 40px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .quote, .nivel {
     font-family: "Qanoar";
     font-size: 32px;
+}
+
+.quote {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    height: 100px;
+}
+
+.name {
+    font-size: 24px;
+    text-align: center;
 }
 
 .rows.tops {
