@@ -221,6 +221,14 @@ button:hover {
         padding: 16px;
     }
 
+    .full, textarea, input {
+        width: 98%;
+    }
+
+    .box--half input {
+        width: 97%;
+    }
+
 }
 
 

@@ -144,9 +144,9 @@ Section 3
 
 /* Mobile Devices */
 @media only screen and (max-width: 767px) {
-    /* .section-1 {
-        height: 50vh;
-    } */
+    html,body {
+        overflow-x: hidden;
+    }
     .section-2 {
         width: 100%;
         display: flex;
