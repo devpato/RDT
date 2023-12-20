@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte Diario Tulum</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nosotros.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="branding">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="" srcset="" />
+        </div>
+        <div class="icons">
+          <img src="./assets/ig-icon.png" alt="" class="insta" />
+          <img src="./assets/whataspp-icon.png" alt="" class="wsp" />
+        </div>
+      </div>
+      <div class="menu-option">
+        <a href="index.html">HOME</a>
+      </div>
+      <div class="menu-option">
+        <a href="comunidad.html">COMUNIDAD</a>
+      </div>
+      <div class="menu-option">
+        <a href="mapa.html">MAPA</a>
+      </div>
+      <div class="menu-option">
+        <a href="servicios.html">SERVICIOS</a>
+      </div>
+      <div class="menu-option">
+        <a href="nosotros.html">NOSOTROS</a>
+      </div>
+      <div class="menu-option">
+        <a href="contacto.html">CONTACTO</a>
+      </div>
+      <div class="menu-icon menu-btn" onclick="toggleMenu()">
+        <img src="./assets/menu-icon.png" alt="" srcset="">
+      </div>
+    </nav>
+    <div class="container">
+      <section class="section-1">
+        <img src="./assets/nosotros.jpg" alt="" class="img-banner" />
+        <div class="section-1_header">
+          <span class="downey">sobre</span>
+          <span class="qanoar">nosotros</span>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="row">
+          <img class="banner-img" src="./assets/nosotros2.jpg" alt="">
+            <div class="col col-left">
+                <span class="title title-special">
+                  <div class="circle"></div>
+                  CREANDO <br>DESDE 2019
+                </span>
+                <p>Agencia fundada en 2019 por Alma Kouris,
+                    una apasionada por la comunicación y su comunidad, Tulum.</p>
+            </div>
+            <div class="col col-right">
+                <span class="title">SEGUIMIENTO</span>
+                <p>Cubrimos todas las aristas de tu proyecto, desde el brand de una marca, hasta su posicionamiento y consolidación.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-left">
+                <span class="title">TALENTOS<br>MULTIDISCIPLINARES</span>
+                <p>Somos una agencia con un equipo creativo joven, innovador y estratégico.</p>
+            </div>
+            <div class="col col-right">
+                <span class="title">NUESTRO<br>DIFERENCIAL</span>
+                <p>Trabajamos una curaduría de marcas donde buscamos colectivamente un impacto positivo para la comunidad de Tulum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-left">
+                <span class="title">TRAYECTORIA</span>
+                <p>Como agencia hemos trabajado desde pequeños emprendimientos hasta corporativos multimarcas.</p>
+            </div>
+            <div class="col col-right"></div>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="row--top">
+            <div class="col-left">
+                <div class="box">
+                    <p class="qanoar">una nota</p>
+                    <p>DE ALMA</p>
+                </div>
+            </div>
+            <div class="col-right"></div>
+        </div>
+        <div class="row--bottom">
+            <div class="col-left">
+                <p>Hola, soy Alma. Fundadora y CEO de Reporte Diario Tulum.</p>
+                <p>Desde pequeña viajé por el mundo. Nací en Israel, crecí en Argentina, y mi vida adulta (so far) decidí vivir en México,. Creo fuertemente que donde mas aprendemos y nos podemos formar, es viajando. Viendo, conociendo, experimentando y saliendo de nuestra zona de comfort.</p>
+                <p>Casi 5 años atrás, comencé a hacer mis reportes sobre el clima y la playa en mis tiempos libres. Fue algo que surgió naturalmente, y algo que la gente encontró de mucha utilidad. Hay algo mágico en poder ayudar a otra persona, ser parte de su rutina. Reporte Diario Tulum nació como mi hobby, haciéndole honor a cosas que me hacen bien: el mar, la comunidad de Tulum y el lifestyle tropical.</p>
+                <p>Lo que empezó como un blog, evolucionó a una agencia de Marketing. Porque muchas marcas se identificaron con nuestra manera orgánica de transmitir información y querían tener ese alcance e impacto en los residentes del Caribe Mexicano</p>
+                <p>Con estudios en actuación, fotografía y marketing, me encanta encontrar nuevas maneras de transmitir marcas, conceptos y productos que estén conectados a un propósito positivo. Ya sea ofrecer productos de alta calidad, amigables al medio ambiente y con una huella positiva en Tulum y el mundo, hemos encontrado durante nuestra trayectoria muchas capas dentro de la comunicación audiovisual</p>
+                <p>Hoy en día somos un equipo de 6 personas, dedicados a seguir innovando y generar un impacto con nuestro trabajo.</p>
+                <p>Te agradezco por tomar el tiempo de leer esto, ya sea que nos conocemos hace años o es tu primera vez aquí, te celebro e invito a salir de tu zona de comfort, para seguir creciendo y convirtiendo sueños en proyectos tangibles.</p>
+            </div>
+            <div class="col-right">
+                <img src="./assets/alma.jpg" alt="">
+            </div>
+        </div>
+      </section>
+    </div>
+    <div id="menu" onclick="toggleMenu()">
+      <a href="index.html">Home</a>
+      <a href="comunidad.html">Community</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <script>
+      function toggleMenu() {
+        document.getElementById('menu').classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>

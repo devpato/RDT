@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    background-color: #FAF4E4;
+    font-family: "NeuePlak";
+}
+
+.downey {
+    margin-top: 16px;
+    font-size: 48px;
+    font-family: "Downey";
+}
+
+section {
+    display: flex;
+}
+
+/*
+
+Section 3
+
+*/
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    padding: 0 0 0 24px
+}
+
+.row--top {
+    min-height: 10vh;
+    border-bottom: 2px solid #2c2c2c;
+    display: flex;
+}
+
+.row--bottom {
+    min-height: 50vh;
+    display: flex;
+}
+
+.row--bottom .col-right, .row--bottom .col-left,  .row--top .col-right, .row--top .col-left{
+    width: 50%;
+    padding: 32px;
+    position: relative;
+}
+
+.row--top .col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row--bottom p, .row--top p {
+    margin: 16px;
+}
+
+.row--bottom {
+    height: 90vh;
+}
+.row--bottom .col-left img {
+    position: absolute;
+    height: 800px;
+    top: -100px;
+}
+
+.box--full, .box--half {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs .box--half {
+    margin: 16px 0;
+    width: 50%;
+
+}
+
+.box--full span, .box--half span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-family: "NeuePlakBold";
+    height: 24px;
+}
+
+.box--full a, .box--half a {
+    margin: 20px;
+    border: 1px solid #222;
+    padding: 8px;
+    width: 280px;
+    cursor: pointer;
+}
+.box--full img, .box--half img{
+    height: 16px;
+}
+
+.row--half {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box.inputs {
+    display: flex;
+    width: 101%;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+input, textarea {
+    /* width: 100%; */
+    height: 32px;
+    /* margin: 16px 0;
+    margin-left: 24px; */
+    background: transparent;
+    border: 1px solid #222;
+    font-family: "NeuePlak";
+}
+
+.full, textarea {
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    margin-top: 16px;
+    padding: 8px;
+    background:none;
+    border-radius: 0;
+    border: 1px solid #2C2C2C;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    color:#FAF4E4;
+    background: #2C2C2C;
+}
+
+@media screen and (max-width: 768px) {
+
+    body, html, .container, .row {
+        overflow-x: hidden;
+    }
+
+    .downey {
+        margin-top: 16px;
+        font-size: 24px;
+        font-family: "Downey";
+    }
+
+    .row {
+        padding: 0
+    }
+
+    .row--top {
+        min-height: 8vh;
+    }
+    
+    .col-left {
+        display: none;
+    }
+    .col-left img {
+        display: none;
+    }
+    .row--top .col-right {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .row--bottom {
+        height: 100%;
+        min-height: 100%
+    }
+
+    .row--half {
+        width: 100%;
+    }
+
+    .box--half {
+        flex-direction: column;
+    }
+
+    .box.inputs {
+        display: flex;
+        width: 101%;
+        flex-direction: column;
+    }
+
+    .inputs .box--half {
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    .row--top .col-right {
+        padding: 16px;
+    }
+
+    .row--bottom .col-right {
+       width: 100%;
+    }
+
+    .row--half {
+        flex-direction: column;
+    }
+
+    .box.inputs {
+        gap: 0px;
+        margin-top: 8px;
+    }
+
+    .row--bottom .col-right {
+        padding: 16px;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    background-color: #FAF4E4;
+    font-family: "NeuePlak";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+}
+section {
+    display: flex;
+}
+
+.img-banner {
+    /* height: 740px; */
+    margin: 0 100px;
+}
+
+.downey {
+    margin-top: 16px;
+    font-size: 48px;
+    font-family: "Downey";
+}
+
+.qanoar {
+    font-size: 40px;
+    font-family: "Qanoar";
+    line-height: 40px;
+}
+
+/*   servicios   */
+.section-1, .section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.section-1_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-img {
+    position: absolute;
+    left: 40px;
+    top: -72px;
+    z-index: 1;
+}
+
+.row {
+    width: 100%;
+    height: 33vh;
+    border-bottom: 2px solid #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.col {
+    width: 25%;
+    margin: 16px;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.title-special {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #80A2D5;
+    border-radius: 50%;
+    z-index: -1;
+    top: -8px;
+    left: -8px;
+}
+
+/*
+
+Section 3
+
+*/
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row--top {
+    min-height: 20vh;
+    border-bottom: 2px solid #2c2c2c;
+    display: flex;
+}
+
+.row--bottom {
+    min-height: 50vh;
+    display: flex;
+}
+
+.row--bottom .col-left, .row--bottom .col-right,  .row--top .col-right{
+    width: 50%;
+    padding: 32px;
+    position: relative;
+}
+
+.row--top .col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row--bottom p, .row--top p {
+    margin: 16px;
+}
+
+.row--bottom .col-right img {
+    position: absolute;
+    height: 900px;
+    width: 800px;
+    top: -160px;
+}
+
+.box {
+    width: 300px;
+}
+
+.box p {
+    text-align: right;
+}
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    /* .section-1 {
+        height: 50vh;
+    } */
+    .section-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .img-banner {
+        height: 200px;
+        margin: 0;
+    }
+    .banner-img {
+        display: none;
+    }
+
+    .row {
+        width: 100%;
+        /* height: 33vh; */
+        border-bottom: 2px solid #2c2c2c;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        min-height: 60vh;
+    }
+
+    .col {
+        width: 100% !important;
+        padding: 8px !important;
+        text-align: center;
+    }
+
+    .section-3 .row--bottom .col-right {
+        display: none;
+    }
+
+    .section-3 .row--top .col-right {
+        display: none;
+    }
+
+    .row--bottom .col-left {
+        width: 100%;
+        padding: 0px;
+        /* position: relative; */
+    }
+
+    .row--top .col-left {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        /* width: 100%; */
+    }
+
+    .box p {
+        text-align: center;
+    }
+}
+  
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* Styles for screens between 768px and 991px wide (typically tablets) */
+}
+
+
+
+
+

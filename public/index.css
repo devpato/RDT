@@ -1,0 +1,76 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: #FAF4E4;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.column {
+    width: 25%;
+    height: calc(100vh - 60px);
+    border-left: 2px solid #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.col-1 { background-image: url('./assets/inicio1.jpg'); }
+.col-2 { background-image: url('./assets/inicio2.jpg'); }
+.col-3 { background-image: url('./assets/inicio3.jpg'); }
+.col-4 { background-image: url('./assets/inicio4.jpg'); }
+
+.column .title {
+    font-family: "Downey";
+    height: 20%;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF4E4;
+    text-align: center;
+}
+
+.titles {
+    color: #FAF4E4;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    right: 24px;
+    font-size: 60px;
+    text-align: right;
+}
+
+span.title { font-family: "Qanoar"; }
+span.subtitle { font-family: "Downey"; }
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        border-left: none;
+        border-bottom: 2px solid #2C2C2C;
+        height: auto;
+        height: 200px;
+    }
+
+   .column .title {
+        height: 100px;
+    }
+
+    .titles {
+        display: none;
+    }
+}
