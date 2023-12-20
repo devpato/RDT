@@ -1,0 +1,45 @@
+footer {
+    background: #2C2C2C;
+    height: 40vh;
+}
+.footer-main {
+    padding: 48px;
+    color: #FAF4E4;
+    font-family: "NeuePlakBold";
+    display: flex;
+}
+
+.col-right-footer-main {
+    width: 40%;
+}
+
+.icons {
+    display: flex;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.copy {
+    display: flex;
+    color: #FAF4E4;
+    padding: 0 48px;
+    margin: 16px 0;
+    font-family: "NeuePlakBold";
+}
+
+.copy .col-left, .copy .col-right {
+    width: 50%;
+}
+
+.footer img {
+    display: none;
+}
+
+
+.col-left-footer-main {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

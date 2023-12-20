@@ -320,32 +320,6 @@ button:hover {
     border-radius: 50%;
 }
 
-
-.footer-main {
-    padding: 48px;
-    color: #FAF4E4;
-    font-family: "NeuePlakBold";
-    background: #2C2C2C;
-    min-height: 40vh;
-    display: flex;
-}
-
-.footer .col-left {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer img {
-    display: none;
-}
-
-
-.col-left-footer-main {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
 @media screen and (max-width: 768px) {
 
     html, body {
