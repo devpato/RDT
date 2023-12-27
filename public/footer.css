@@ -44,3 +44,22 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 100%;
+        padding-bottom: 24px;
+    }
+
+    .col-left-footer-main, .copy {
+        flex-direction: column;
+    }
+
+    .copy {
+        gap: 8px;
+    }
+
+    .copy .col-left, .copy .col-right {
+        width: 100%;
+    }
+}

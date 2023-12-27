@@ -349,11 +349,7 @@ button:hover {
         text-align: center;
     }
 
-    .section-3 {
-        display: none;
-    }
-
-    .section-5 {
+    .section-3, .section-4 .header, .section-4-body, .section-5 {
         display: none;
     }
 

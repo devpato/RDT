@@ -464,8 +464,8 @@ button:hover {
     padding: 16px;
 }
 
-@media only screen and (max-width: 767px) {
-    .carousel, .services-img-left, .section-6, .section-7  {
+@media only screen and (max-width: 768px) {
+    .carousel, .services-img-left, .section-6, .section-7, .section-3,.section-4, .section-5  {
         display: none;
     }
 
